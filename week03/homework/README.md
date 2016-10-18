@@ -4,15 +4,22 @@
 
 Пример:
 
-| file1       | file2        | file3                   |
+**file1**:
 
-| ----------- | ------------ | ----------------------- |
+  - Aurelio 15
+  - Marquez 20
+  - Sanchez 40
 
-| Aurelio 15  | Esmeralda 20 | Aurelio 15 Esmeralda 20 |
+**file2**:
 
-| Marquez 20  | Juanita 16   | Juanita 16 Marquez 20   |
+  - Esmeralda 20
+  - Juanita 16
 
-| Sanchez 40  |              | Sanchez 40              |
+**file3**:
+
+  - Aurelio 15 Esmeralda 20
+  - Juanita 16 Marquez 20
+  - Sanchez 40
 
 2) **1.5 единици**: Да се напише програма, която чете от файл, всеки ред на който съдържа имена (потенциално повече от 1) на човек и коефициент на интелигентност. Програмата да преобразува всеки ред в низ, съдържащ имената, и число (не низ), отговарящо на IQ-то му.
 
