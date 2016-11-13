@@ -49,7 +49,7 @@
 
     list<int> filtered = filter(li, &filt);
     // Ще изведе списъка 2, 3, 4
-    for (list<int>::iterator it = mapped.begin(); it != mapped.end(); it++)
+    for (list<int>::iterator it = filtered.begin(); it != filtered.end(); it++)
       cout << *it << " ";
 
     // Ще изведе 10, т.е. сумата на елементите, започвайки от начална стойност 0
