@@ -8,7 +8,7 @@ int min(int a, int b, int c) {
 		swap(a, b);
 	if (a > c)
 		swap(a, c);
-	
+
 	return a;
 }
 
@@ -24,17 +24,17 @@ void hamming(int n) {
 	queue<int> two;
 	queue<int> three;
 	queue<int> five;
-	
+
 	two.push(2);
 	three.push(3);
 	five.push(5);
-	
+
 	for (int i = 1; i < n; i++) {
 		// Взимаме си минималния елемент
 		int minFront = min(two.front(), three.front(), five.front());
-		
+
 		cout << minFront << endl;
-	
+
 		// Изтриваме минималния елемент от съответната/ите опашка/и
 		popMin(two, minFront);
 		popMin(three, minFront);
@@ -46,7 +46,7 @@ void hamming(int n) {
 		five.push(5 * minFront);
 	}
 }
-/*
+
 int main() {
 	hamming(50);
-}*/
+}
