@@ -11,7 +11,14 @@ struct Node {
 
     Node(T const&, Node<T>*, Node<T>*, Node<T>*);
     Node() {};
+
+    bool isLeaf() const;
 };
+
+template <typename T>
+bool Node<T>::isLeaf() const {
+    return left == NULL && right == NULL;
+}
 
 template <typename T>
 Node<T>::Node(T const& _data, Node<T>* _left, Node<T>* _right, Node<T>* _back) {
@@ -35,7 +42,7 @@ public:
     Node<T>* add(Node<T>*, int, T const&);
     void erase(Node<T>*);
 
-    Node<T>* getRoot();
+    Node<T>* getRoot() const;
 };
 
 template <typename T>
